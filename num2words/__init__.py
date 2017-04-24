@@ -26,6 +26,7 @@ from . import lang_DE
 from . import lang_ES
 from . import lang_LT
 from . import lang_LV
+from . import lang_NL
 from . import lang_PL
 from . import lang_RU
 from . import lang_ID
@@ -48,6 +49,7 @@ CONVERTER_CLASSES = {
     'id': lang_ID.Num2Word_ID(),
     'lt': lang_LT.Num2Word_LT(),
     'lv': lang_LV.Num2Word_LV(),
+    'nl': lang_NL.Num2Word_NL(),
     'pl': lang_PL.Num2Word_PL(),
     'ru': lang_RU.Num2Word_RU(),
     'no': lang_NO.Num2Word_NO(),
