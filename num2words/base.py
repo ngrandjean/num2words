@@ -86,7 +86,6 @@ class Num2Word_Base(object):
 
             if mod:
                 out.append(self.splitnum(mod))
-
             return out
 
 

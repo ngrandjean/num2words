@@ -22,11 +22,7 @@ class Num2Word_NL(Num2Word_EU):
     def setup(self):
         self.negword = "min"
         self.pointword = "komma"
-        # self.errmsg_nonnum = u"Seulement des nombres peuvent être convertis en mots."
-        # convertir : omzetten (todo: verbe à particule?)
-        # todo: omzetten in obligaties vs omzetten var kilo naar ponden => in of naar ??
         self.errmsg_nonnum = u"Maar getalen naar worden kunnen omzetten worden."
-        # self.errmsg_toobig = u"Nombre trop grand pour être converti en mots."
         self.errmsg_toobig = u"Word is te groot om in worden te omzetten worden."
         self.exclude_title = ["en", "komma", "min"]
         self.mid_numwords = [(1000, "duizend"), (100, "honderd"),
