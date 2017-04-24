@@ -36,7 +36,22 @@ class Num2Word_NL(Num2Word_EU):
         self.ords = {
             "een": "eerste",
             "drie": "derde",
+            "acht": "achtste",
         }
+
+    def to_ordinal(self, value):
+        self.verify_ordinal(value)
+        word = self.to_cardinal(value)
+        for src, repl in self.ords.items():
+            if word.endswith(src):
+                word = word[:-len(src)] + repl
+                break
+        else:
+            if value >= 20:
+                word += "ste"
+            else:
+                word += "de"
+        return word
 
     def set_high_numwords(self, high):
         max = 3 + 6 * len(high)
